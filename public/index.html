@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button id="newContact">CREATE NEW CONTACT</button>
+            <button id="seeAllContacts">SEE ALL CONTACTS</button>
+            <button id="searchContacts">SEARCH CONTACTS</button>
+        </div>
+        <div class="form off">
+            <div class="firstName">
+                <label for="nameF">First Name:</label>
+                <input type="text" name="nameF" id="nameF">
+            </div>
+            <div class="lastName">
+                <label for="nameL">Last Name:</label>
+                <input type="text" name="nameL" id="nameL">
+            </div>
+            <div class="phone">
+                <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone" placeholder="###-###-####">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="address">
+                <div>
+                    <label for="street">Street Address:</label>
+                    <input type="text" name="street" id="street">
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state">
+                </div>
+                <div>
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" name="zip" id="zip">
+                </div>
+            </div>
+            <button id="submitBtn">SUBMIT</button>
+        </div>
+
+        <div class="search off">
+            <div class="contactSearch">
+                <h2>Search for a Contact</h2>
+                <select name="searchType" id="searchType">
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <option value="city">City</option>
+                    <option value="state">State</option>
+                </select>
+                <input type="text" id="searchValue">
+                <button id="submitSearch">SEARCH</button>
+                <div id="results"></div>
+            </div>
+        </div>
+        <div class="allContacts off"></div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

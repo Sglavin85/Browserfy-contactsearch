@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form div {
+    display: flex;
+    flex-direction: row;
+}
+
+.address {
+    display: flex;
+    flex-direction: column
+}
+
+.address div {
+    display: flex;
+    flex-direction: row;
+}
